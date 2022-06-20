@@ -1,0 +1,52 @@
+@page "/processAndDownloadFile"
+@using Services
+@inject IQueueService QueueService
+
+<PageTitle>Download file</PageTitle>
+
+<table>
+    <tr>
+        <td>
+            <label>Download</label>
+        </td>
+        <td>
+            <input type="button" name="btnDownload" value="Download" onclick="@btnClick"/>
+        </td>
+    </tr>
+    <tr hidden="@GuidHidden" >
+        <td>
+            <label>Created Guid</label>
+        </td>
+        <td>
+            <label id="lblGui">@MessageGuid</label>
+        </td>
+    </tr>
+    <tr hidden="@ResulstHidden">
+        <td>
+            <label>Result</label>
+        </td>
+        <td>
+            <label id="lblCreatedDate"></label>
+            </td>
+    </tr>
+</table>
+
+@code{
+    public bool GuidHidden { get; set; } = true;
+    public bool ResulstHidden { get; set; }=true;
+
+    public String MessageGuid { get; set; }
+
+    private void btnClick()
+    {
+        var message = new Message();
+        MessageGuid = message.Id.ToString();
+        QueueService.PutMessageOnTheQueue(message);
+        GuidHidden = false;
+    }
+
+     protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+    }
+}
