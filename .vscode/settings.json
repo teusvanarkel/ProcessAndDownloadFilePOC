@@ -1,4 +1,9 @@
 {
     "appService.defaultWebAppToDeploy": "/subscriptions/dab6ce2a-f412-40d8-8468-4b4f27aa9946/microsoft.web/sites/subscriptions/dab6ce2a-f412-40d8-8468-4b4f27aa9946/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/ProcessAndDownloadWebsite",
-    "appService.deploySubpath": "WebSite"
+    "appService.deploySubpath": "WebSite",
+    "azureFunctions.deploySubpath": "Function/bin/Release/net6.0/publish",
+    "azureFunctions.projectLanguage": "C#",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.preDeployTask": "publish (functions)"
 }

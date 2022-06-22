@@ -16,7 +16,10 @@ namespace WebSite.Services
 
         public QueueService()
         {
-            _queueClient = new QueueClient(_connection, _queueName);
+            _queueClient = new QueueClient(_connection, _queueName, new QueueClientOptions
+            {
+                MessageEncoding = QueueMessageEncoding.Base64
+            });
             _queueClient.CreateIfNotExists();
         }
 
