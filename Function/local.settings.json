@@ -1,0 +1,8 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=processanddownloadfile;AccountKey=5AU5n5MrPjSAPc7iBIhvWWgqlCJdMDc/n5an++/RwBk23sNA0g2xYELvBkrMgyYb5t2nNpvCr0lD+AStKyNz/w==;EndpointSuffix=core.windows.net",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "processanddownloadfile_STORAGE": "DefaultEndpointsProtocol=https;AccountName=processanddownloadfile;AccountKey=5AU5n5MrPjSAPc7iBIhvWWgqlCJdMDc/n5an++/RwBk23sNA0g2xYELvBkrMgyYb5t2nNpvCr0lD+AStKyNz/w==;EndpointSuffix=core.windows.net"
+  }
+}
