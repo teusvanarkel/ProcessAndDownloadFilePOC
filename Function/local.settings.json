@@ -3,6 +3,7 @@
   "Values": {
     "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=processanddownloadfile;AccountKey=5AU5n5MrPjSAPc7iBIhvWWgqlCJdMDc/n5an++/RwBk23sNA0g2xYELvBkrMgyYb5t2nNpvCr0lD+AStKyNz/w==;EndpointSuffix=core.windows.net",
     "FUNCTIONS_WORKER_RUNTIME": "dotnet",
-    "processanddownloadfile_STORAGE": "DefaultEndpointsProtocol=https;AccountName=processanddownloadfile;AccountKey=5AU5n5MrPjSAPc7iBIhvWWgqlCJdMDc/n5an++/RwBk23sNA0g2xYELvBkrMgyYb5t2nNpvCr0lD+AStKyNz/w==;EndpointSuffix=core.windows.net"
+    "processanddownloadfile_STORAGE": "DefaultEndpointsProtocol=https;AccountName=processanddownloadfile;AccountKey=5AU5n5MrPjSAPc7iBIhvWWgqlCJdMDc/n5an++/RwBk23sNA0g2xYELvBkrMgyYb5t2nNpvCr0lD+AStKyNz/w==;EndpointSuffix=core.windows.net",
+    "ServiceBusConnection": "Endpoint=sb://processanddownloadfilepocsb.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=9QHLCy9c8aje3E5dpo0RtGetlG2voKfqbu4ueCm4xZM="
   }
 }
